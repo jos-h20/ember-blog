@@ -1,1 +1,4 @@
-{{outlet}}
+{{#each model as |post|}}
+  {{admin-tile post=post update="update" destroyPost="destroyPost"}}
+{{/each}}
+{{new-post savePost="savePost"}}
