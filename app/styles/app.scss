@@ -34,8 +34,42 @@ h2{
     background-color:white;
   }
 }
-body {
-
+  .titleBar{
+    color: #fff;
+    background-color: rgba(0,0,0,0.4);
+    width: 100%;
+    position: absolute;
+    margin-top: -250px;
+    height: 150px;
+    .titleBarInner{
+      display: flex;
+      justify-content: center;
+      .title{
+        font-size: 3em;
+      }
+      .subtitle{
+        font-size: 2em;
+      }
+    }
+  }
+.arrows{
+  display: flex;
+  justify-content: space-between;
+  font-size: 40px;
+  position: relative;
+  bottom: 400px;
+  color: white;
+  margin: 0 auto;
+  .fa{
+    background-color: rgba(0,0,0,0.8);
+    padding: 4px;
+    border-radius: 2px;
+  }
+}
+.carouselItem img {
+  width: 100%;
+  height: auto;
+  max-height: 1200px;
 }
 .row{
   display: flex;
@@ -64,7 +98,7 @@ body {
     }
     img{
       width: 100%;
-      height: 500px;
+      height: 50vh;
     }
   }
 }
