@@ -42,6 +42,9 @@
 {{#each model as |post|}}
   <div class='postTease'>
     {{post-tile post=post}}
+    <div class='overlay'>
+      <h3 class='overlayText'>{{post.title}}</h3>
+    </div>
   </div>
 {{/each}}
 </div>

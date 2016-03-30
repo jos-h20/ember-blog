@@ -103,7 +103,20 @@ h1, h2, h3{
     }
   }
 }
-
+.overlay{
+  position: absolute;
+  margin-top: -300px;
+  width: 70%;
+  background-color: black;
+  opacity: 0;
+  .overlayText{
+    margin-left: auto;
+    margin: 0 auto;
+  }
+  &:hover{
+    opacity: 1;
+  }
+}
 .pageBreak {
   color: grey;
   h3{
