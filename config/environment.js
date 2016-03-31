@@ -5,7 +5,7 @@ module.exports = function(environment) {
     modulePrefix: 'stumptown-beans',
     environment: environment,
     contentSecurityPolicy: { 'connect-src': "'self' https://auth.firebase.com wss://*.firebaseio.com" },
-    firebase: 'https://stumptown.firebaseio.com/',
+    firebase: 'https://stumptownblog.firebaseio.com/',
     baseURL: '/',
     locationType: 'auto',
     EmberENV: {

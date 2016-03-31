@@ -41,7 +41,9 @@
 <div class='row'>
 {{#each model as |post|}}
   <div class='postTease'>
-    {{post-tile post=post}}
+    {{#link-to 'post' post.id}}
+      {{post-tile post=post}}
+    {{/link-to}}
     <div class='overlay'>
       <h3 class='overlayText'>{{post.title}}</h3>
     </div>

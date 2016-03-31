@@ -1,2 +1,7 @@
 <p>{{post.body}}</p>
 <h4>{{post.date}}</h4>
+<h2>Comments:</h2>
+{{#each post.comments as |comment|}}
+  {{comment-tile comment=comment}}
+  <button class="btn"{{action 'deleteComment' comment}}>Delete</button>
+{{/each}}
