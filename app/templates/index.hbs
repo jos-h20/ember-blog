@@ -37,18 +37,20 @@
 
 
  </div>
-
 <div class='row'>
-{{#each model as |post|}}
+{{limitedPost model thing}}
+{{log thing}}
+{{#each thing as |post|}}
   <div class='postTease'>
     {{#link-to 'post' post.id}}
     <div class='img'>
       <div class='overlay'>
-        <h3 class='overlayText'>{{post.title}}</h3>
+        <h3 class='overlayText'>{{post.data.title}}</h3>
       </div>
-      {{post-tile post=post}}
+      {{post-tile post=post }}
     </div>
     {{/link-to}}
   </div>
 {{/each}}
+
 </div>
