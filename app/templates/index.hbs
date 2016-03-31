@@ -42,11 +42,13 @@
 {{#each model as |post|}}
   <div class='postTease'>
     {{#link-to 'post' post.id}}
+    <div class='img'>
+      <div class='overlay'>
+        <h3 class='overlayText'>{{post.title}}</h3>
+      </div>
       {{post-tile post=post}}
-    {{/link-to}}
-    <div class='overlay'>
-      <h3 class='overlayText'>{{post.title}}</h3>
     </div>
+    {{/link-to}}
   </div>
 {{/each}}
 </div>
