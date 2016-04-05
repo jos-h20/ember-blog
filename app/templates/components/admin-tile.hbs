@@ -1,3 +1,6 @@
-<h3>{{post.title}}</h3>
-{{update-post post=post update="update"}}
-<button class="btn" {{action 'delete' post}}>Delete</button>
+<div class="update-blog">
+  <h3>{{post.title}}</h3>
+  {{update-post post=post update="update"}}
+  <button class="btn" {{action 'delete' post}}>Delete</button>
+
+</div>

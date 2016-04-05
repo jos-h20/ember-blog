@@ -38,9 +38,8 @@
 
  </div>
 <div class='row'>
-{{limitedPost model thing}}
-{{log thing}}
-{{#each thing as |post|}}
+
+{{#each model as |post|}}
   <div class='postTease'>
     {{#link-to 'post' post.id}}
     <div class='img'>
